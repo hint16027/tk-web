@@ -49,3 +49,5 @@ gender=male
 | `&gt;`          | `>`      |
 | `&amp;`         | `&`      |
 | `&quot;`        | `"`      |
+#<textarea placeholder="Nhập câu trả lời của em..."></textarea>
+--> nhập câu trả lời dạng nhiều dòng  <--
