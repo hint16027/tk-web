@@ -51,3 +51,7 @@ gender=male
 | `&quot;`        | `"`      |
 #<textarea placeholder="Nhập câu trả lời của em..."></textarea>
 --> nhập câu trả lời dạng nhiều dòng  <--
+#	Viết ở file .css tách riêng
+<head>
+  <link rel="stylesheet" href="GiaoDien.css">
+</head>
