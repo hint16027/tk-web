@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài ôn tâp HTML & Form</title>
+    <style>
+       table{border-collapse: collapse;
+        width: 100%;
+}
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+    </style>
+</head>
+<body>
+    <h1>Bài ôn tập HTML & Form</h1>
+    <h2>Thông tin sinh viên</h2>
+    
+    <form>
+    <label>Họ và tên</label><input type="text" name="fullname" placeholder="Nguyen Van A"><br>
+    <label>Mã sinh viên</label><input type="text" name="masinhvien" placeholder="2026xxxx"><br>
+    <label>Lớp</label><input type="text" name="class" placeholder="2026ITxxxx"><br>
+    <label>Email<label><input type="email" name="email" placeholder="ten@sv.haui.edu.vn"><br>
+
+        <fieldset>
+        <legend>Phần A-Kiến thức HTMK(4 điểm)</legend>
+        <p>1.Khai báo nào cho biết tài liệu đang sử dụng HTML5?</p><br>
+        <input type="radio" name="html" value="&lt;!DOCTYPE html&gt;">&lt;!DOCTYPE html&gt;
+        <input type="radio" name="html" value="&lt;html5&gt;">&lt;html5&gt;
+        <input type="radio" name="html" value="&lt;meta html=&quot;5&quot;&gt;">&lt;meta html=&quot;5&quot&gt;<br>
+        <p>2.Thẻ nào tạo danh sách không có thứ tự</p><br>
+        <input type="radio" name="list" value="ol">&lt;ol&gt;
+        <input type="radio" name="list" value="ul">&lt;ul&gt;
+        <input type="radio" name="list" value="li">&lt;li&gt;
+        <p>3.Ghép đúng chức năng với thẻ HTML.</p><br>
+        <table >
+            <tr>
+                <th>Thẻ</th>
+                <th>Chức năng</th>
+            </tr>
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>Tạo liên kết</td>
+            </tr>
+            <tr>
+                <td>&lt;img&gt;</td>
+                <td>Chèn hình ảnh</td>
+            </tr>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Tạo bảng</td>
+            </tr>
+        </table>
+        <p>Theo em, thuộc tính nào của &lt;img&gt; giúp mô tả ảnh khi ảnh không tải được?<input type="text" name="thuoctinh" placeholder="Nhập tên thuộc tính"></p>
+        <p>4.Chọn hai thẻ thường dùng để tạo một dòng và một ô trong bảng.</p>
+        <input type="checkbox" name="creattablecard" value="tr">&lt;tr&gt;
+        <input type="checkbox" name="creattablecard" value="td">&lt;td&gt;
+        <input type="checkbox" name="creattablecard" value="br">&lt;br&gt;
+        <input type="checkbox" name="creattablecard" value="p">&lt;p&gt;
+        </fieldset>
+        <fieldset>
+            <legend>Phần B-Form HTML(4 điểm)</legend>
+            <p>5.Chọn loại input phù hợp cho từng dữ liệu</p>
+            <label>Địa chỉ email</label>
+            <select name="dcemail">
+    <option value="">-- Chọn --</option>
+        <option value="text">text</option>
+        <option value="email">email</option> 
+        <option value="number">number</option>
+        <option value="password">password</option>
+</select><br>
+<label>Ngày sinh</label>
+<select name="birthday">
+    <option value="">--Chọn--</option>
+    <option value="text">text</option>
+        <option value="email">email</option> 
+        <option value="number">number</option>
+        <option value="password">password</option>
+        <option value="date">date</option>
+
+</select><br>
+<p>6. Form của em thường dùng những thành phần nào? Chọn tất cả đáp án phù hợp.</p>
+        <input type="checkbox" name="form" value="label">&lt;label&gt;
+        <input type="checkbox" name="form" value="input">&lt;input&gt;
+        <input type="checkbox" name="form" value="select">&lt;select&gt;
+        <input type="checkbox" name="form" value="textarea">&lt;textarea&gt;
+<p>7. Viết ngắn gọn tác dụng của thuộc tính required.</p>
+<textarea placeholder="Nhập câu trả lời của em..."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Phần C-Thực hành nhanh(2 điểm)</legend>
+            <p>Hoàn thiện thông tin đăng ký một buổi thực hành Web dưới đây. Hãy sử dụng đúng kiểu dữ liệu của
+từng trường.</p>
+<label>Tên người đăng kí</label>
+<input type="text" name="tennguoidangki"><br>
+<label>Số buổi đã học HTML</label>
+<input type="number" name="Sobuoi"><br>
+<label>Ngày tham gia</label>
+<input type="date" name="day"><br>
+<label>Chủ đề muốn ôn tập</label>
+<select>
+    <option>--Chọn một chủ đề--</option>
+    <option>CSS</option>
+    <option>HTML</option>
+    <option>Javascript</option>
+</select><br>
+<label>Hình thức tham gia</label>
+<input type="radio" value="hinhthuc" name="online">online
+<input type="radio" value="hinhthuc" name="off">Tại phòng máy<br>
+<label>Trình duyệt em thường dùng</label>
+<input 
+      type="text"  
+      name="browser" 
+      list="browsers" 
+      placeholder="Chọn hoặc nhập trình"
+    >
+    <datalist id="browsers">
+      <option value="Google Chrome">
+      <option value="Microsoft Edge">
+      <option value="Mozilla Firefox">
+      <option value="Cốc Cốc">
+      <option value="Safari">
+    </datalist>
+    <p>Một điều em còn chưa rõ</p>
+    <textarea>Ví dụ: cách dùng name,
+id, for...</textarea>
+        </fieldset>
+        <input type="reset" value="Làm lại">
+        <input type="submit" value="Nộp bài ôn tập">
+        
+</form>
+</body>
+</html>
